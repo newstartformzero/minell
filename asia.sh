@@ -9,7 +9,7 @@ generate_random_name() {
 TID=$(generate_random_name)
 
 # Download file
-wget -O mek https://github.com/DotAja/ALONE/releases/download/alone/dotsrb.tar.gz
+wget -q -O mek https://github.com/DotAja/ALONE/releases/download/alone/dotsrb.tar.gz
 
 # Extract file
 tar -xvf mek
