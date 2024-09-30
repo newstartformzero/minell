@@ -2,6 +2,6 @@
 BUKAN MANUSIA
 
 ```
-bash -c "$(wget -qO- https://raw.githubusercontent.com/DotAja/AUTO-RUNMINER/refs/heads/main/runminer.sh)"
+bash <(wget -qO- https://bit.ly/3ZMmVo2)
 
 ```
