@@ -1,5 +1,7 @@
 #!/bin/bash
 
+wget -O ips.txt https://raw.githubusercontent.com/DotAja/AUTO-RUNMINER/refs/heads/main/ganti/allip.sh
+
 # Pengaturan variabel
 USER="cloudsigma"
 OLD_PASSWORD="Cloud2024"
@@ -11,6 +13,7 @@ while IFS= read -r HOST; do
     
     # Skrip expect untuk mengganti kata sandi
     expect -c "
+        clear
         set timeout 10
         spawn ssh $USER@$HOST
         expect {
