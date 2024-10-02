@@ -2,8 +2,8 @@
 
 # Pengaturan variabel
 USER="cloudsigma"
-OLD_PASSWORD="12345678"
-NEW_PASSWORD="passwordBaru123!"
+OLD_PASSWORD="Cloud2024"
+NEW_PASSWORD="12345678"
 
 # Baca IP dari file.txt
 while IFS= read -r HOST; do
@@ -23,6 +23,6 @@ while IFS= read -r HOST; do
         expect \"Retype new UNIX password:\" { send \"$NEW_PASSWORD\r\" }
         expect eof
     "
-    
+    clear
     echo "Kata sandi untuk VPS $HOST telah berhasil diubah."
-done < "file.txt"
+done < "ips.txt"
