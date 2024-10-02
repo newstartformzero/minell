@@ -28,4 +28,5 @@ while IFS= read -r HOST; do
     "
     clear
     echo "Kata sandi untuk VPS $HOST telah berhasil diubah."
+    sleep 3
 done < "ips.txt"
