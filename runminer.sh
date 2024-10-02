@@ -28,7 +28,7 @@ run_script() {
 
     # Menggunakan expect untuk login otomatis dan menjalankan script
     /usr/bin/expect << EOF
-    set timeout 30
+    set timeout 10
     spawn ssh $USER@$IP
     expect {
         "*yes/no*" { send "yes\r"; exp_continue }
