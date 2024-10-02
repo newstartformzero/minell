@@ -13,7 +13,6 @@ while IFS= read -r HOST; do
     
     # Skrip expect untuk mengganti kata sandi
     expect -c "
-        clear
         set timeout 10
         spawn ssh $USER@$HOST
         expect {
@@ -26,7 +25,5 @@ while IFS= read -r HOST; do
         expect \"Retype new UNIX password:\" { send \"$NEW_PASSWORD\r\" }
         expect eof
     "
-    clear
     echo "Kata sandi untuk VPS $HOST telah berhasil diubah."
-    sleep 3
 done < "ips.txt"
