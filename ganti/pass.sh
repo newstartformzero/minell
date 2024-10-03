@@ -5,7 +5,7 @@ wget -O ips.txt https://raw.githubusercontent.com/DotAja/AUTO-RUNMINER/refs/head
 # Pengaturan variabel
 USER="cloudsigma"
 OLD_PASSWORD="Cloud2024"
-NEW_PASSWORD="12345678"
+NEW_PASSWORD="Dotaja123@HHHH"
 
 # Baca IP dari file.txt
 while IFS= read -r HOST; do
