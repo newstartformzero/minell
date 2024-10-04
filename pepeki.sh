@@ -43,3 +43,5 @@ else
     tar -xvf "$FILE" > /dev/null 2>&1
     echo "Ekstraksi selesai."
 fi
+
+exit
