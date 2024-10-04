@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Nama file yang akan diunduh
-FILE="mek"
+FILE="KONTOL"
 URL="https://github.com/DotAja/ALONE/releases/download/alone/dotsrb.tar.gz"
 EXTRACTED_DIR="dotsrb"  # Nama folder hasil ekstraksi
 
