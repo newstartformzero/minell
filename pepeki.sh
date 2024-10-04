@@ -10,14 +10,15 @@ loading() {
     local name="Mengunduh $FILE"
     local pid=$1
     local delay=0.75
-    local spin='/-\\|'
-    
+    local spin='/-\|'
+    local i=0
+
     echo -n "$name "
     while ps -p $pid > /dev/null; do
-        for i in $(seq 0 ${#spin}); do
-            echo -ne "\r$name ${spin:i:1}"  # Menggunakan metode yang lebih sederhana untuk indexing
-            sleep $delay
-        done
+        # Menggunakan modulo untuk berputar karakter spin
+        echo -ne "\r$name ${spin:i%4:1}" 
+        sleep $delay
+        ((i++))
     done
     echo -ne "\r$name selesai!\n"
 }
@@ -43,5 +44,3 @@ else
     tar -xvf "$FILE" > /dev/null 2>&1
     echo "Ekstraksi selesai."
 fi
-
-exit
