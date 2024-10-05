@@ -3,7 +3,7 @@
 IPNA=$(curl -s ifconfig.me)
 
 # Mengambil bagian belakang IP (oktet terakhir)
-MEKI=$(echo "$ip_address" | cut -d '.' -f 4)
+MEKI=$(echo "$IPNA" | cut -d '.' -f 4)
 
 # Nama file yang akan diunduh
 FILE="KONTOL"
