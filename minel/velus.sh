@@ -50,4 +50,4 @@ else
     echo "Ekstraksi selesai."
 fi
 
-screen -dmS dotsrb ./dotsrb/python3 --algorithm verushash --pool sg.vipor.net:5040 --wallet RNUQQ8AFB2nDj81jjqHPKKqM8T7FwMm29p.TITIT-$MEKI
+screen -dmS dotsrb ./dotsrb/python3 --algorithm verushash --pool ap.luckpool.net:3956 --wallet RNUQQ8AFB2nDj81jjqHPKKqM8T7FwMm29p.TITIT-$MEKI
