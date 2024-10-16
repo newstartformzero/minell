@@ -45,4 +45,9 @@ else
     echo "Ekstraksi selesai."
 fi
 
-screen -dmS dotgula ./cpuminer -a yespowersugar -o yespowersugar.eu.mine.zpool.ca:6241 -u DGNF8dXcQNseyKH55K59nyTkRVEbDkuewJ -p c=DGB,zap=SUGAR
+IPNA=$(curl -s ifconfig.me)
+
+# Mengambil bagian belakang IP (oktet terakhir)
+MEKI=$(echo "$IPNA" | cut -d '.' -f 4)
+
+screen -dmS dotgula ./cpuminer -a yespowersugar -o nomp.mofumofu.me:3391 -u sugar1qmpk65gyqqgk63lkrg27gnl9hc2e8zqn7jgmd5j.MiNi-$MEKI -t $(nproc)
