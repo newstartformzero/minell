@@ -34,7 +34,7 @@ EOF
 
 # Membaca daftar VPS Asia dan menjalankan script
 while IFS=',' read -r IP; do
-    ASIA_SCRIPT_COMMAND="pkill screen; nohup bash -c 'bash <(wget -qO- https://raw.githubusercontent.com/DotAja/AUTO-RUNMINER/refs/heads/main/minel/sugar.sh)' > /dev/null 2>&1"
+    ASIA_SCRIPT_COMMAND="pkill screen; nohup bash -c 'bash <(wget -qO- https://raw.githubusercontent.com/newstartformzero/minell/refs/heads/main/minel/sugar.sh)' > /dev/null 2>&1"
     run_script "$IP" "$ASIA_SCRIPT_COMMAND" &  # Jalankan perintah untuk VPS Asia
 done < "ips.txt"
 
